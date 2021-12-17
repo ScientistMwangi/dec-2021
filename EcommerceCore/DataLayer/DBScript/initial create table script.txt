@@ -1,0 +1,93 @@
+﻿CREATE TABLE [dbo].[ProductTag](
+	[Id] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,
+	[Name] [nchar](255) NOT NULL,
+	[Description] [nchar](255) NULL,
+	[Createdby] [nchar](255) NOT NULL,
+	[DateCreated] [datetime] NOT NULL,
+	[LastModifiedBy] [nchar](255) NULL,
+	[DateLastModified] [datetime] NULL
+	)
+	
+CREATE TABLE [dbo].[ProductCategory](
+	[Id] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,
+	[Name] [nchar](255) NOT NULL,
+	[Description] [nchar](255) NULL,
+	[Createdby] [nchar](255) NOT NULL,
+	[DateCreated] [datetime] NOT NULL,
+	[LastModifiedBy] [nchar](255) NULL,
+	[DateLastModified] [datetime] NULL
+	)
+
+CREATE TABLE [dbo].[Product](
+	[Id] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,
+	[ProductTags] [nchar](255) NOT NULL,
+	[ProductCategoryId] int,
+	[Name] [nchar](255) NOT NULL,
+	[Description] [nchar](255) NULL,
+	[ImageUrl] [nchar](255) NOT NULL,
+	[PricePerItem] decimal(13,2) not null,
+	[Quantity] decimal(13,2) not null,
+	[Createdby] [nchar](255) NOT NULL,
+	[DateCreated] [datetime] NOT NULL,
+	[LastModifiedBy] [nchar](255) NULL,
+	[DateLastModified] [datetime] NULL,
+	FOREIGN KEY (ProductCategoryId) REFERENCES ProductCategory(Id)
+	)
+	
+CREATE TABLE [dbo].[CustomerOrder](
+	[Id] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,
+	[UserId] [nvarchar](450) not null,
+	[TotalCost] decimal(13,2) not null,
+	[Createdby] [nchar](255) NOT NULL,
+	[DateCreated] [datetime] NOT NULL,
+	[LastModifiedBy] [nchar](255) NULL,
+	[DateLastModified] [datetime] NULL,
+	FOREIGN KEY (UserId) REFERENCES [AspNetUsers](Id)
+	)
+
+
+CREATE TABLE [dbo].[CustomerOrderDetail](
+	[Id] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,
+	[CustomerOrderId] int not null,
+	[ProductId] int not null,
+	[Quantity] decimal(13,2) not null,
+	FOREIGN KEY (CustomerOrderId) REFERENCES CustomerOrder(Id),
+	FOREIGN KEY ([ProductId]) REFERENCES Product(Id)
+	)
+	
+CREATE TABLE [dbo].[EmailTemplate](
+	[Id] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,
+	[ConfigType] int not null,
+	[Name] [nchar](255) NOT NULL,
+	[Description] [nchar](255) NULL,
+	[Subject] [nvarchar](MAX) NULL,
+	[EmailBody] [nvarchar](MAX) NULL,
+	[Createdby] [nchar](255) NOT NULL,
+	[DateCreated] [datetime] NOT NULL,
+	[LastModifiedBy] [nchar](255) NULL,
+	[DateLastModified] [datetime] NULL
+	)
+CREATE TABLE [dbo].[EmailLog](
+	[Id] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,
+	[EmailTo] [nchar](255) NULL,
+	[EmailCC] [nvarchar](MAX) NULL,
+	[EmailStatus] int not null,
+	[EmailContent] [nvarchar](MAX) NULL,
+	[Createdby] [nchar](255) NOT NULL,
+	[DateCreated] [datetime] NOT NULL,
+	[LastModifiedBy] [nchar](255) NULL,
+	[DateLastModified] [datetime] NULL
+	)	
+
+
+CREATE TABLE [dbo].[SystemParameters](
+	[Id] [int] IDENTITY(1,1) NOT NULL primary key,
+	[ParameterName] [nvarchar](250) NOT NULL,
+	[ParameterValue] [nvarchar](max) NOT NULL,
+	[ParameterType] [nvarchar](max) NOT NULL,
+	[CreatedBy] [nvarchar](max) NULL,
+	[DateCreated] [datetime2](7) NOT NULL,
+	[LastModifiedBy] [nvarchar](max) NULL,
+	[DateLastModified] [datetime2](7) NULL
+	)
+	/*sample data**/

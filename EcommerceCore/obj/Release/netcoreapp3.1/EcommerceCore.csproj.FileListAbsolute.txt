@@ -1,0 +1,12 @@
+C:\Users\The Scientist\source\repos\NG-Ecommerce\EcommerceCore\bin\Release\netcoreapp3.1\EcommerceCore.deps.json
+C:\Users\The Scientist\source\repos\NG-Ecommerce\EcommerceCore\bin\Release\netcoreapp3.1\EcommerceCore.runtimeconfig.json
+C:\Users\The Scientist\source\repos\NG-Ecommerce\EcommerceCore\bin\Release\netcoreapp3.1\EcommerceCore.runtimeconfig.dev.json
+C:\Users\The Scientist\source\repos\NG-Ecommerce\EcommerceCore\bin\Release\netcoreapp3.1\EcommerceCore.dll
+C:\Users\The Scientist\source\repos\NG-Ecommerce\EcommerceCore\bin\Release\netcoreapp3.1\EcommerceCore.pdb
+C:\Users\The Scientist\source\repos\NG-Ecommerce\EcommerceCore\obj\Release\netcoreapp3.1\EcommerceCore.csproj.AssemblyReference.cache
+C:\Users\The Scientist\source\repos\NG-Ecommerce\EcommerceCore\obj\Release\netcoreapp3.1\EcommerceCore.AssemblyInfoInputs.cache
+C:\Users\The Scientist\source\repos\NG-Ecommerce\EcommerceCore\obj\Release\netcoreapp3.1\EcommerceCore.AssemblyInfo.cs
+C:\Users\The Scientist\source\repos\NG-Ecommerce\EcommerceCore\obj\Release\netcoreapp3.1\EcommerceCore.csproj.CoreCompileInputs.cache
+C:\Users\The Scientist\source\repos\NG-Ecommerce\EcommerceCore\obj\Release\netcoreapp3.1\EcommerceCore.dll
+C:\Users\The Scientist\source\repos\NG-Ecommerce\EcommerceCore\obj\Release\netcoreapp3.1\EcommerceCore.pdb
+C:\Users\The Scientist\source\repos\NG-Ecommerce\EcommerceCore\obj\Release\netcoreapp3.1\EcommerceCore.genruntimeconfig.cache
