@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31402.337
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NG-Ecommerce", "NG-Ecommerce\NG-Ecommerce.csproj", "{1E122CF2-CBB3-4A9D-B253-ECD3E99A8E6D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NG-Ecommerce", "NG-Ecommerce\NG-Ecommerce.csproj", "{1E122CF2-CBB3-4A9D-B253-ECD3E99A8E6D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcommerceCore", "EcommerceCore\EcommerceCore.csproj", "{24CBB013-F50B-4CE1-B654-7B357DDC6E30}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit Tests", "Unit Tests", "{C54457B1-99EA-480D-8C03-B4C6EF272576}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NG-eCommerce.Test", "NG-eCommerce.Test\NG-eCommerce.Test.csproj", "{3A2A6908-9D5D-41DC-B300-E871B29A85E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +25,16 @@ Global
 		{24CBB013-F50B-4CE1-B654-7B357DDC6E30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24CBB013-F50B-4CE1-B654-7B357DDC6E30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24CBB013-F50B-4CE1-B654-7B357DDC6E30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A2A6908-9D5D-41DC-B300-E871B29A85E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A2A6908-9D5D-41DC-B300-E871B29A85E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A2A6908-9D5D-41DC-B300-E871B29A85E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A2A6908-9D5D-41DC-B300-E871B29A85E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3A2A6908-9D5D-41DC-B300-E871B29A85E9} = {C54457B1-99EA-480D-8C03-B4C6EF272576}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0406201E-FDDC-491C-AD30-E07E8FE7A1D6}

@@ -97,7 +97,7 @@ namespace NG_Ecommerce.Controllers
             var user = await _userManager.FindByNameAsync(userLoginResource.Email);
             LoginResponse loginResponse;
             //.SingleOrDefault(u => u.UserName == userLoginResource.Email);
-            if (user is null)
+            if (user == null)
             {
                 loginResponse = new LoginResponse { Message = "Wrong email or password ", Success = false };
                 return Ok(loginResponse);
