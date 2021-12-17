@@ -6,11 +6,7 @@ CREATE DATABASE [NGEcommerce_v2]
 GO
 ALTER DATABASE [NGEcommerce_v2] SET COMPATIBILITY_LEVEL = 150
 GO
-IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
-begin
-EXEC [NGEcommerce_v2].[dbo].[sp_fulltext_database] @action = 'enable'
-end
-GO
+
 ALTER DATABASE [NGEcommerce_v2] SET ANSI_NULL_DEFAULT OFF 
 GO
 ALTER DATABASE [NGEcommerce_v2] SET ANSI_NULLS OFF 
