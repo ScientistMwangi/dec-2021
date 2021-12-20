@@ -63,10 +63,10 @@ namespace NG_eCommerce.Test
             var loginResponse = (LoginResponse)response.Value;
 
             //Assert
-            Assert.Equal(response.StatusCode, 200);
-            Assert.Equal(loginResponse.Success, true);
+            Assert.Equal(200, response.StatusCode);
+            Assert.True(loginResponse.Success);
             Assert.Equal(loginResponse.Username, request.Email);
-            Assert.Equal(loginResponse.Role, "Admin");
+            Assert.Equal("Admin", loginResponse.Role);
 
         }
     }
